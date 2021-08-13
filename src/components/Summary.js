@@ -6,3 +6,5 @@ export const Summary = (props) =>
                 <span>{props.steps.length} Steps</span>
             </p>
         </div>   
+
+        

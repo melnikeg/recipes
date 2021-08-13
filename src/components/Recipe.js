@@ -9,6 +9,7 @@ const Recipe = ({ name, ingredients, steps }) =>
 		<Instructions title="cooking Instructions"
 			steps={steps} />
 		<Summary ingredients={ingredients} steps={steps} title={name} />
+		
 	</section>	
 
 export default Recipe
