@@ -1,13 +1,6 @@
-/* const data = [
-			"steps": [
-			"Cook the fish on the grill until hot.",
-			"Place the fish on the 3 tortillas.",
-			"Top them with lettuce, tomatoes, and cheese."
-		]
-	}
-] */
 import IngredientsList from "./IngredientsList"
 import Instructions from "./Instructions"
+import {Summary} from "./Summary"
 
 const Recipe = ({ name, ingredients, steps }) =>
 	<section id={name.toLowerCase().replace(/ /g, "-")}>
@@ -15,6 +8,8 @@ const Recipe = ({ name, ingredients, steps }) =>
 		<IngredientsList list={ingredients} />
 		<Instructions title="cooking Instructions"
 			steps={steps} />			
-	</section>
+		<Summary ingredients={ingredients} steps={steps} title={name} />		
+	</section>	
+
 
 export default Recipe

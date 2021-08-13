@@ -5,5 +5,4 @@ export const Summary = (props) =>
                 <span>{props.ingredients.length} Ingredients</span> |
                 <span>{props.steps.length} Steps</span>
             </p>
-        </div>  
-         
+        </div>   
